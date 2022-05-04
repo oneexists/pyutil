@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import albums
 import quotes
+import books
 
 #on y va
 options = {
@@ -8,7 +9,8 @@ options = {
     2: 'Random Quote',
     3: 'All Albums',
 	4: 'Add Album',
-	5: 'Exit'
+	5: 'Add Book',
+	6: 'Exit'
 }
 
 
@@ -38,6 +40,8 @@ def main():
 		elif selection == 4:
 			albums.add_album()
 		elif selection == 5:
+			books.add_book()
+		elif selection == 6:
 			print('Exiting application.')
 			exit()
 		elif isinstance(selection, int):
